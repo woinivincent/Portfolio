@@ -34,8 +34,26 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
     let mensaje = document.getElementById("mensaje").value;
 
     // Construir el enlace de WhatsApp con los datos del formulario
-    let enlaceWhatsApp = "https://wa.me/XXXXXXXXXX?text=Nombre:%20" + encodeURIComponent(nombre) + "%0ATeléfono:%20" + encodeURIComponent(telefono) + "%0AAsunto:%20" + encodeURIComponent(asunto) + "%0AMensaje:%20" + encodeURIComponent(mensaje);
+    let enlaceWhatsApp = "https://wa.me/5492323462300?text=Nombre:%20" + encodeURIComponent(nombre) + "%0ATeléfono:%20" + encodeURIComponent(telefono) + "%0AAsunto:%20" + encodeURIComponent(asunto) + "%0AMensaje:%20" + encodeURIComponent(mensaje);
 
     // Redirigir a WhatsApp
     window.location.href = enlaceWhatsApp;
   });
+
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Desplazamiento suave
+    });
+}
+
+// Mostrar u ocultar el botón dependiendo del desplazamiento
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnBackToTop").style.display = "block";
+    } else {
+        document.getElementById("btnBackToTop").style.display = "none";
+    }
+}
