@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vicente Woinilowicz</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="/descarga.jpg" />
+  </head>
+  <body>
+    <header class="header">
+      <i class="bi bi-list" id="menu-icon"></i>
+      <a href="#home" class="logo">Vicente <span>Woinilowicz</span></a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img
+          src="/Imagen de WhatsApp 2024-02-13 a las 16.59.43_4718f1b7.jpg"
+          alt="ptofile-pic"
+        />
+      </div>
+      <div class="home-content">
+        <h1>Hola, Soy <span>Vicente</span></h1>
+        <h3 class="text-animation">Soy <span></span></h3>
+        <p>
+          Soy estudiante de desarrollo web full stack y JAVA (Stack M.E.R.N;
+          PHP), estoy en la búsqueda de mi primer empleo en IT, busco crecer
+          como programador y seguir aprendiendo. Me considero una persona
+          dedicada, responsable, autodidacta, y muy sociable.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/vicente-woinilowicz-060b0627a/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+
+          <a href="https://wa.me/5492323462300?text=Hola"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="https://github.com/woinivincent"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Contrátame</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">Sobre <span>Mí</span></h2>
+        <h3 class="text-animation">
+          <span></span>
+        </h3>
+        <p>
+          Hace un año comencé a estudiar y a formarme como desarrollador web, si
+          bien provengo de otro rubro, a lo largo de mi trayectoria, me
+          desempeñé en tareas administrativas; de atención al cliente y como
+          líder de equipo considero que una de mis mayores virtudes son mis
+          Soft-skills, soy un buen compañero y siempre busco generar el mejor
+          ambiente de trabajo posible. Tengo muchisimo interés en aprender y
+          formarme profesionalmente. si bien no cuento con experiencia real en
+          It, creo que puedo aportar muchisimo valor en los equipos que me toque integrar 
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="about-img">
+        <img
+          src="Imagen de WhatsApp 2024-02-13 a las 16.59.43_4718f1b7.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Clon Netflix</h4>
+            <p>
+              Pagina web clon de Netflix creada como primer proyecto del curso
+              de fullstack, fue nuestro primer acercamiento al desarrollo web,
+              por lo que los desafios fueron muchos entre los cuales fueron:
+              trabajar en grupo por primera vez implementando metodologia SCRUM;
+              hacer nuestro primer deploy de la pagina; y generar interactividad
+              utilizando solo Html y Css
+            </p>
+          </div>
+          <a href="https://github.com/Ezzeorazi/proyectoModulo1">Ver más</a>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Web Ecommerce</h4>
+            <p>
+              Ecommerce creado a modo de proyecto de segundo modulo del curso de
+              fullstack, para empresa familiar Panificados Patagonia. Uno de los
+              grandes desafios con los que me encontre fue encontrar el diseño
+              perfecto para cada uno de los componentes.
+            </p>
+          </div>
+          <a href="https://github.com/woinivincent/proyecto-2-">Ver más</a>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>App de clima</h4>
+            <p>
+              Proyecto de Web App a modo de Practica de Javascript, consumiendo
+              la API de openweather, generamos el pronóstico climático en base a
+              nuestra geolocalización.
+            </p>
+          </div>
+          <a href="https://github.com/woinivincent/weather">Ver más</a>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Age calculator App</h4>
+            <p>
+              Desafío de Front-end mentor, Practica de Javascript. Uno de los
+              principales desafios con los que me encontre fue poner en Practica
+              la logica de la calculadora.
+            </p>
+          </div>
+          <a href="https://github.com/woinivincent/age-calculator-app-main"
+            >Ver más</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form id="miFormulario">
+        <div class="input-box">
+          <input type="text" id="nombre" placeholder="Nombre Completo" required/>
+        </div>
+        <div class="input-box">
+          <input type="tel" id="telefono" placeholder="Teléfono" required/>
+          <input type="text" id="asunto" placeholder="Asunto" required/>
+        </div>
+        <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+        <input type="submit" value="Enviar" class="btn" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/vicente-woinilowicz-060b0627a/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+
+        <a href="https://wa.me/5492323462300?text=Hola"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
+        <a href="https://github.com/woinivincent"
+          ><i class="bi bi-github"></i
+        ></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+          <a href="#">Projects</a>
+          <a href="#">About Me</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policies</a>
+        </li>
+      </ul>
+      <p class="copyright">© Vicente Woinilowicz - 2024</p>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>
