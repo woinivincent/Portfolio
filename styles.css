@@ -8,13 +8,13 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
-:root { 
+:root {
   --bg-color: #111111;
   --second-bg-color: #151515;
   --text-color: white;
   --main-color: #04fffb;
 }
- 
+
 .light-theme {
   --bg-color: #fff;
   --second-bg-color: #f2f2f2;
@@ -35,7 +35,6 @@ body {
   cursor: pointer;
   margin-left: 20px;
   padding: auto;
-
 }
 
 .header {
@@ -61,12 +60,11 @@ body {
 .logo:hover {
   transform: scale(1.1);
 }
-.navbar{
+.navbar {
   flex: 1;
   text-align: end;
   justify-content: center;
   margin-top: 5px;
-
 }
 .navbar a {
   font-size: 1.8rem;

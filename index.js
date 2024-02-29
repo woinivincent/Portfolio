@@ -14,17 +14,17 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active')
-                document.querySelector('header nav a[href *= '+id+']').classList.add ('active')
+                document.querySelector('header nav a[href *= ' + id + ']').classList.add('active')
             })
         }
     })
 }
-menuIcon.onclick= () =>{
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
 
-document.getElementById("miFormulario").addEventListener("submit", function(event) {
+document.getElementById("miFormulario").addEventListener("submit", function (event) {
     event.preventDefault(); // Evitar el envío del formulario por defecto
 
     // Obtener los valores del formulario
@@ -38,22 +38,33 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
 
     // Redirigir a WhatsApp
     window.location.href = enlaceWhatsApp;
-  });
-
-  function scrollToTop() {
+});
+// Función para desplazarse hacia arriba
+function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: "smooth" // Desplazamiento suave
     });
 }
 
-const icon = document.getElementById ('icon')
+// Mostrar u ocultar el botón dependiendo del desplazamiento
+window.onscroll = function() {scrollFunction()};
 
-icon.onclick = function () {
-    document.body.classList.toggle("light-theme")
-    if(document.body.classList.contains("light-theme")){
-        icon.src ="dark theme icon/moon.png"
-    } else{
-        icon.src= "dark theme icon/sun.png"
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnBackToTop").style.display = "block";
+    } else {
+        document.getElementById("btnBackToTop").style.display = "none";
     }
 }
+
+    const icon = document.getElementById('icon')
+
+    icon.onclick = function () {
+        document.body.classList.toggle("light-theme")
+        if (document.body.classList.contains("light-theme")) {
+            icon.src = "dark theme icon/moon.png"
+        } else {
+            icon.src = "dark theme icon/sun.png"
+        }
+    }
