@@ -624,6 +624,7 @@ span {
   .project-box {
     padding: 2rem;
     justify-content: center;
+    max-width: 425px;
   }
 
   #btnBackToTop {
