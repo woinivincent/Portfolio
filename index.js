@@ -47,13 +47,13 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
     });
 }
 
-// Mostrar u ocultar el botón dependiendo del desplazamiento
-window.onscroll = function() {scrollFunction()};
+const icon = document.getElementById ('icon')
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btnBackToTop").style.display = "block";
-    } else {
-        document.getElementById("btnBackToTop").style.display = "none";
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")){
+        icon.src ="dark theme icon/sun.png"
+    } else{
+        icon.src= "dark theme icon/moon.png"
     }
 }
