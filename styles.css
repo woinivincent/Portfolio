@@ -213,19 +213,19 @@ span {
   }
   21%,
   40% {
-    content: "Front-end ";
+    content: "Web Developer ";
   }
   41%,
   60% {
-    content: "Community Manager";
+    content: "Front-end";
   }
   61%,
   80% {
-    content: "Entusiasta ";
+    content: "Community Manager";
   }
   81%,
   100% {
-    content: "Líder";
+    content: "Entusiasta";
   }
 }
 @keyframes typing {
