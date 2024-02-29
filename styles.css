@@ -8,17 +8,18 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
-:root {
-  --bg-color: #fff;
-  --second-bg-color: #f2f2f2;
-  --text-color: #111111;
-  --main-color: #063433;
-}
-.dark-theme {
+:root { 
   --bg-color: #111111;
   --second-bg-color: #151515;
   --text-color: white;
   --main-color: #04fffb;
+}
+ 
+.light-theme {
+  --bg-color: #fff;
+  --second-bg-color: #f2f2f2;
+  --text-color: #111111;
+  --main-color: #063433;
 }
 
 html {
@@ -34,10 +35,9 @@ body {
   cursor: pointer;
   margin-left: 20px;
   padding: auto;
+
 }
-#icon:hover {
-  color: var(--main-color);
-}
+
 .header {
   position: fixed;
   top: 0;

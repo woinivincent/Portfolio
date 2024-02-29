@@ -50,10 +50,10 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
 const icon = document.getElementById ('icon')
 
 icon.onclick = function () {
-    document.body.classList.toggle("dark-theme")
-    if(document.body.classList.contains("dark-theme")){
-        icon.src ="dark theme icon/sun.png"
+    document.body.classList.toggle("light-theme")
+    if(document.body.classList.contains("light-theme")){
+        icon.src ="dark theme icon/moon.png"
     } else{
-        icon.src= "dark theme icon/moon.png"
+        icon.src= "dark theme icon/sun.png"
     }
 }
