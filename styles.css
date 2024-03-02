@@ -12,7 +12,7 @@
   --bg-color: #111111;
   --second-bg-color: #151515;
   --text-color: white;
-  --main-color: #04fffb;
+  --main-color: #178dad;
 }
 
 .light-theme {
@@ -31,7 +31,7 @@ body {
   color: var(--text-color);
 }
 #icon {
-  width: 28px;
+  font-size: 32px;
   cursor: pointer;
   margin-left: 20px;
   padding: auto;
@@ -253,33 +253,7 @@ span {
     width: calc(100% + 8px);
   }
 }
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
-  background: var(--second-bg-color);
-  color: var(--text-color);
-}
-.about h2 span {
-  color: var(--main-color);
-  text-shadow: 0 0 50px var(--main-color);
-}
-.about-img {
-  border-radius: 50%;
-}
-.about-img img {
-  position: relative;
-  width: 32vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--main-color);
-  top: 1rem;
-  cursor: pointer;
-  transition: 0.4 ease-in-out;
-}
-.about-img img:hover {
-  box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
-}
+
 .heading {
   text-align: center;
   font-size: 8rem;
@@ -329,7 +303,7 @@ span {
   width: 30%; /* Ajusta este valor según sea necesario */
   margin: 20px;
   padding: 15px;
-  border: 1px solid var(--main-color);
+  border: px solid var(--main-color);
   border-radius: 5px;
   text-align: center;
 }
@@ -344,7 +318,7 @@ span {
 }
 
 .projects {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   color: var(--text-color);
 }
 .projects h2 {
@@ -364,10 +338,10 @@ span {
   align-items: center;
 }
 .project-box {
-  background-color: var(--main-color);
+  background-color: transparent;
 
   height: fit-content;
-  border-radius: 3rem;
+  border-radius: 1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   width: fit-content;
@@ -376,16 +350,14 @@ span {
 }
 
 .project-box:hover {
-  background: white;
+  background: transparent;
   color: var(--main-color);
-  transform: scale(1.03);
+  transform: scale(1.025);
 }
 
 .project-box .project-info {
   display: flex;
   flex-direction: column;
-
-  padding: 2rem;
 }
 
 .overlay {
@@ -396,11 +368,11 @@ span {
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 3rem;
+  background-color: transparent;
+  border-radius: 1rem;
   padding: 20px;
 }
 .overlay i {
@@ -408,6 +380,7 @@ span {
   font-size: 20px;
 }
 .overlay a {
+  margin-left: 25px;
   margin-top: 15px;
 }
 

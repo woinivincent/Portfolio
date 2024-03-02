@@ -23,21 +23,18 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
+document.getElementById('miFormulario').addEventListener('submit', function (event) {
+    event.preventDefault(); // Detener el envío predeterminado del formulario
 
-document.getElementById("miFormulario").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evitar el envío del formulario por defecto
+    const nombre = document.getElementById('nombre').value;
+    const asunto = document.getElementById('asunto').value;
+    const mensaje = document.getElementById('mensaje').value;
 
-    // Obtener los valores del formulario
-    let nombre = document.getElementById("nombre").value;
-    let telefono = document.getElementById("telefono").value;
-    let asunto = document.getElementById("asunto").value;
-    let mensaje = document.getElementById("mensaje").value;
+    // Crear el enlace mailto con los datos del formulario
+    const mailtoLink = `mailto:woinilowicz@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(`Nombre: ${nombre}\nMensaje: ${mensaje}`)}`;
 
-    // Construir el enlace de WhatsApp con los datos del formulario
-    let enlaceWhatsApp = "https://wa.me/5492323462300?text=Nombre:%20" + encodeURIComponent(nombre) + "%0ATeléfono:%20" + encodeURIComponent(telefono) + "%0AAsunto:%20" + encodeURIComponent(asunto) + "%0AMensaje:%20" + encodeURIComponent(mensaje);
-
-    // Redirigir a WhatsApp
-    window.location.href = enlaceWhatsApp;
+    // Abrir el enlace mailto
+    window.location.href = mailtoLink;
 });
 // Función para desplazarse hacia arriba
 function scrollToTop() {
@@ -48,7 +45,7 @@ function scrollToTop() {
 }
 
 // Mostrar u ocultar el botón dependiendo del desplazamiento
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -58,13 +55,13 @@ function scrollFunction() {
     }
 }
 
-    const icon = document.getElementById('icon')
+const icon = document.getElementById('icon')
 
-    icon.onclick = function () {
-        document.body.classList.toggle("light-theme")
-        if (document.body.classList.contains("light-theme")) {
-            icon.src = "dark theme icon/moon.png"
-        } else {
-            icon.src = "dark theme icon/sun.png"
-        }
+icon.onclick = function () {
+    document.body.classList.toggle("light-theme")
+    if (document.body.classList.contains("light-theme")) {
+        icon.classList = "bi bi-toggle-on"
+    } else {
+        icon.classList = "bi bi-toggle-off"
     }
+}
