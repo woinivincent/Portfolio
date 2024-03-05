@@ -30,13 +30,12 @@ document.getElementById('miFormulario').addEventListener('submit', function (eve
     const asunto = document.getElementById('asunto').value;
     const mensaje = document.getElementById('mensaje').value;
 
-    // Crear el enlace mailto con los datos del formulario
+    
     const mailtoLink = `mailto:woinilowicz@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(`Nombre: ${nombre}\nMensaje: ${mensaje}`)}`;
 
-    // Abrir el enlace mailto
     window.location.href = mailtoLink;
 });
-// Función para desplazarse hacia arriba
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -58,8 +57,8 @@ function scrollFunction() {
 const icon = document.getElementById('icon')
 
 icon.onclick = function () {
-    document.body.classList.toggle("light-theme")
-    if (document.body.classList.contains("light-theme")) {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains("dark-theme")) {
         icon.classList = "bi bi-toggle-on"
     } else {
         icon.classList = "bi bi-toggle-off"
