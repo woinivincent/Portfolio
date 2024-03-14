@@ -374,6 +374,16 @@ span {
   object-fit: cover;
   opacity: 0.955; /* Para asegurar que la imagen se ajuste sin distorsión */
 }
+.project-data {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.project-data img {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-flex;
+}
+
 .contact {
   background-color: var(--second-bg-color);
 }
@@ -556,18 +566,23 @@ span {
   }
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
-    padding: 3rem;
-    margin: 12px;
+    padding: 8em;
+
     justify-content: center;
     align-items: center;
   }
   .project-box {
+    display: flex;
     padding: 1rem;
     justify-content: center;
-    max-width: 425px;
+    max-width: 100%;
+ 
   }
   .project-box img {
-    width: max-content;
+    width: 400px;
+  }
+  .project-data{
+    text-align: center;
   }
 
   #btnBackToTop {
