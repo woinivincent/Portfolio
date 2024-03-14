@@ -256,7 +256,7 @@ span {
 
 .heading {
   text-align: center;
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 ::-webkit-scrollbar {
@@ -515,9 +515,13 @@ span {
     padding: 2rem 3%;
   }
 }
-@media (max-width: 895px) {
+@media (max-width: 895px){
+  
   #menu-icon {
     display: block;
+  }
+  .heading h2{
+    font-size: 1rem;
   }
   .navbar {
     position: absolute;
@@ -572,14 +576,15 @@ span {
     align-items: center;
   }
   .project-box {
-    display: flex;
+    display: block  ;
     padding: 1rem;
     justify-content: center;
-    max-width: 100%;
+    width: 90%;
+    
  
   }
   .project-box img {
-    width: 400px;
+    width: 100%;
   }
   .project-data{
     text-align: center;
