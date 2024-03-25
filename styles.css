@@ -387,6 +387,7 @@ span {
   margin-top: 20px;
   margin-left: 20px;
   display: inline-flex;
+  height: 30px;
 }
 
 .contact {
